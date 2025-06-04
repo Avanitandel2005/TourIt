@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel With Us</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #4CAF50, #2E8B57);
+            color: white;
+            padding: 1.5rem;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .tagline {
+            font-size: 1.2rem;
+            font-style: italic;
+            margin-top: 0.5rem;
+            color: #e0f2f1;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+        }
+
+        header {
+            background: linear-gradient(135deg, #4CAF50, #2E8B57);
+            color: white;
+            padding: 2rem;
+            padding-top: 4.5rem;
+            text-align: center;
+            position: relative;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .top-nav {
+            position: absolute;
+            top: 1rem;
+            right: 2rem;
+        }
+
+        nav a {
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #4CAF50;
+            color: white;
+            border-radius: 5px;
+        }
+          .appname {
+    position: absolute;
+    top: 1rem;
+    left: 2rem;
+}
+
+.brand {
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+    font-family: 'Arial Black', sans-serif;
+}
+
+
+        .hero {
+            height: 50vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #4CAF50;
+            color: white;
+            font-size: 2rem;
+            font-weight: bold;
+            text-align: center;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        }
+        .content {
+            padding: 3rem 10%;
+            text-align: center;
+        }
+        .content h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+        .destinations {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 2rem 0;
+        }
+        .destination {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            text-align: center;
+            font-size: 1.2rem;
+            font-weight: 500;
+        }
+        .destination:hover {
+            transform: scale(1.05);
+        }
+        .destination a {
+            display: inline-block;
+            margin-top: 10px;
+            color: #4CAF50;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .destination a:hover {
+            text-decoration: underline;
+        }
+        .destination img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+        }
+
+
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="appname">
+            <div class="brand">TourIt</div>
+        </div>
+        <div class="top-nav">
+            <nav>
+                <a href="/home">Home</a>
+                <a href="/home#destinations">Destinations</a>
+                <a href="/contact">Contact</a>
+                <a href="/about">Register</a>
+            </nav>
+        </div>
+        <h1>Travel With Us</h1>
+        <p>Explore the world with our amazing travel packages!</p>
+        <p class="tagline">Discover the world's best vacation spots — one click at a time.</p>
+    </header>
+
+    <section class="hero">
+        Your Adventure Awaits
+    </section>
+    <section class="content" id="destinations">
+        <h2>Popular Destinations</h2>
+        <div class="destinations">
+            <div class="destination">
+                <img src="https://www.tourmyindia.com/socialimg/goa-tourism.jpg" alt="Goa">
+                <h3>Goa</h3>
+                <p>India's beach paradise, known for nightlife, Portuguese heritage, and sunsets.</p>
+                <a href="https://en.wikipedia.org/wiki/Goa" target="_blank">Explore Goa</a>
+            </div>
+            <div class="destination">
+                <img src="https://www.tripsavvy.com/thmb/tzR2cSoCIbaPb9xew9d3PZMBPJA=/2121x1414/filters:fill(auto,1)/GettyImages-507311190-5ae34c6e0e23d90039a57d00.jpg" alt="Jaipur">
+                <h3>Jaipur</h3>
+                <p>The Pink City, famous for forts, palaces, and rich Rajasthani culture.</p>
+                <a href="https://en.wikipedia.org/wiki/Jaipur" target="_blank">Explore Jaipur</a>
+            </div>
+            <div class="destination">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Paris_Night.jpg/640px-Paris_Night.jpg" alt="Paris">
+                <h3>Paris</h3>
+                <p>The city of love and lights.</p>
+                <a href="https://en.wikipedia.org/wiki/Paris" target="_blank">Explore Paris</a>
+            </div>
+            <div class="destination">
+                <img src="https://a.cdn-hotels.com/gdcs/production75/d966/8994658f-13ad-4106-bde4-856450359f47.jpg" alt="Bali">
+                <h3>Bali</h3>
+                <p>Tropical paradise with stunning beaches.</p>
+                <a href="https://en.wikipedia.org/wiki/Bali" target="_blank">Explore Bali</a>
+            </div>
+            <div class="destination">
+                <img src="https://www.tripsavvy.com/thmb/ji2uToRmKZZUqVZa5FYTmWeWsD4=/3864x2577/filters:fill(auto,1)/new-york-city-555749235-59d5839a685fbe0011fda06b.jpg" alt="New York">
+                <h3>New York</h3>
+                <p>The city that never sleeps.</p>
+                <a href="https://en.wikipedia.org/wiki/New_York_City" target="_blank">Explore New York</a>
+            </div>
+            <div class="destination">
+                <img src="https://s.yimg.com/ny/api/res/1.2/jvkzkQLZ51wXmHswNTiktg--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD04MDA-/https://s.yimg.com/os/creatr-uploaded-images/2021-07/59a4bc60-f23c-11eb-bf75-c38993010fb7" alt="Tokyo">
+                <h3>Tokyo</h3>
+                <p>Blend of tradition and modernity in Japan's capital.</p>
+                <a href="https://en.wikipedia.org/wiki/Tokyo" target="_blank">Explore Tokyo</a>
+            </div>
+            <div class="destination">
+                <img src="https://www.thetimes.com/imageserver/image/methode/sundaytimes/prod/web/bin/68670052-30c9-11e7-aac4-1ba2dd1bdb9f.jpg?crop=2667%2C1500%2C0%2C0" alt="Rome">
+                <h3>Rome</h3>
+                <p>The eternal city filled with ancient wonders.</p>
+                <a href="https://en.wikipedia.org/wiki/Rome" target="_blank">Explore Rome</a>
+            </div>
+            <div class="destination">
+                <img src="https://www.voyageavecnous.fr/wp-content/uploads/2021/06/que-faire-a-cape-town.jpg" alt="Cape Town">
+                <h3>Cape Town</h3>
+                <p>Breathtaking views at the tip of Africa.</p>
+                <a href="https://en.wikipedia.org/wiki/Cape_Town" target="_blank">Explore Cape Town</a>
+            </div>
+            <div class="destination">
+                <img src="https://www.familyvacationcritic.com/wp-content/uploads/sites/19/2017/07/6d0843c31c1cfa00c9b5b3ed28b041c9.jpg" alt="Maldives">
+                <h3>Maldives</h3>
+                <p>Luxury overwater villas and crystal-clear waters.</p>
+                <a href="https://en.wikipedia.org/wiki/Maldives" target="_blank">Explore Maldives</a>
+            </div>
+            <div class="destination">
+                <img src="https://www.travelandleisure.com/thmb/ISDM_sDW3_0NSMJTZ3jgXjpRgsk=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/zermatt-switzerland-aerial_SKITOWN0123-0df880426acd494c9d8791be79b07494.jpg" alt="Switzerland">
+                <h3>Switzerland</h3>
+                <p>Snowy mountains and scenic train rides.</p>
+                <a href="https://en.wikipedia.org/wiki/Switzerland" target="_blank">Explore Switzerland</a>
+            </div>
+            <div class="destination">
+                <img src="https://3.bp.blogspot.com/-pnaAkl3TTLI/UiM3_IUj46I/AAAAAAAAPSE/DSTVMVNxqpM/s1600/dubai+tower.jpg" alt="Dubai">
+                <h3>Dubai</h3>
+                <p>Luxury shopping, modern architecture, and desert safaris.</p>
+                <a href="https://en.wikipedia.org/wiki/Dubai" target="_blank">Explore Dubai</a>
+            </div>
+            <div class="destination">
+                <img src="https://www.setaswall.com/wp-content/uploads/2018/04/London-UK-Wallpaper-02-2880x1800.jpg" alt="London">
+                <h3>London</h3>
+                <p>Historic capital of the UK, known for Big Ben, museums, and royal palaces.</p>
+                <a href="https://en.wikipedia.org/wiki/London" target="_blank">Explore London</a>
+            </div>
+        </div>
+
+    </section>
+    <footer>
+        <p>&copy; 2025 Travel With Us. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login Page</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') no-repeat center center/cover;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .login-container {
+      background: rgba(255, 255, 255, 0.95);
+      padding: 40px 30px;
+      border-radius: 16px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+      width: 100%;
+      max-width: 420px;
+      backdrop-filter: blur(10px);
+    }
+
+    .login-container h2 {
+      text-align: center;
+      margin-bottom: 25px;
+      color: #2c3e50;
+      font-size: 28px;
+    }
+
+    .login-container label {
+      font-weight: 600;
+      font-size: 14px;
+      display: block;
+      margin-bottom: 6px;
+      color: #34495e;
+    }
+
+    .login-container input[type="Username"],
+    .login-container input[type="password"] {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 20px;
+      border: 1px solid #bdc3c7;
+      border-radius: 8px;
+      font-size: 15px;
+      transition: 0.3s;
+    }
+
+    .login-container input:focus {
+      border-color: #3498db;
+      outline: none;
+      box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+    }
+
+    .login-container button {
+      width: 100%;
+      padding: 12px;
+      background-color: #3498db;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s, transform 0.2s;
+    }
+
+    .login-container button:hover {
+      background-color: #2980b9;
+      transform: scale(1.02);
+    }
+
+    .login-container .link {
+      text-align: center;
+      margin-top: 16px;
+      font-size: 14px;
+    }
+
+    .login-container .link a {
+      color: #3498db;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .login-container .link a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 500px) {
+      .login-container {
+        margin: 0 20px;
+        padding: 30px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <h2>Login to Continue</h2>
+    <form action="/login" method="POST">
+      <label for="Username">Username</label>
+      <input type="Username" id="Username" name="Username" placeholder="Enter email address" required>
+
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" placeholder="Enter password" required>
+
+      <button type="submit">Login</button>
+    </form>
+    <div class="link">
+      <p>Don't have an account? <a href="about">Register Here</a></p>
+    </div>
+  </div>
+</body>
+</html>
